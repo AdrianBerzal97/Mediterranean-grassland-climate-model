@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated publication."
+title: "Mediterranean Grassland Productivity under Climate Change"
+type: software
+authors:
+  - family-names: "Berzal Martínez"
+    given-names: "Adrián"
+repository-code: "https://github.com/AdrianBerzal97/Mediterranean-grassland-climate-model"
+preferred-citation:
+  type: article
+  title: "Climate Change Impacts on Mediterranean Grassland Productivity Along a Climatic Gradient in Central Spain: An Ecohydrological Modeling Approach"
+  authors:
+    - family-names: "Berzal Martínez"
+      given-names: "Adrián"
+    - family-names: "Sanz"
+      given-names: "Ernesto"
+    - family-names: "Díaz-Ambrona"
+      given-names: "Carlos G. H."
+    - family-names: "Almeida-Ñauñay"
+      given-names: "Andrés F."
+    - family-names: "Tarquis"
+      given-names: "Ana M."
+  year: 2026
+  journal: "Agronomy"
+  volume: 16
+  doi: "10.3390/agronomy16141340"
