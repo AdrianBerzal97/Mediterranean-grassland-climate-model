@@ -1,0 +1,23 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Raw and local data
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.txt
+
+# Keep data documentation
+!data/README.md
+
+# Generated outputs
+*.xlsx
+*.csv
+
+# Operating system / editors
+.DS_Store
+Thumbs.db
+.vscode/
