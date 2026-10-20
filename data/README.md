@@ -38,3 +38,7 @@ and four SSP scenarios:
 
 To reproduce the published analysis, obtain the source data from their original
 providers and adapt the import step to the local file structure.
+
+## AdapteCCa THREDDS acquisition
+
+Climate-model NetCDF datasets were downloaded manually via the AdapteCCa THREDDS server. See [`src/climate_data/README.md`](../src/climate_data/README.md) for NetCDF diagnostics, extraction and validation requirements. Original NetCDF files are not redistributed.
