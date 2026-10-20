@@ -21,3 +21,13 @@ data/*.txt
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Local NetCDF archives, model inputs, generated results and credentials
+netcdf/
+outputs/
+.Renviron
+.env
+.env.*
+!.env.example
+*.nc
+*.nc4
