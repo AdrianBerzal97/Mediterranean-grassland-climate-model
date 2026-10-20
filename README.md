@@ -60,6 +60,10 @@ approximately 4% for the mountain system, 25% for the foothill system and 33%
 for the semi-arid flatland system, with increasing interannual variability
 toward drier environments.
 
+## AdapteCCa climate-data acquisition and NetCDF checks
+
+Climate-model NetCDF files were downloaded **manually via the AdapteCCa THREDDS server**. This repository now documents that acquisition step and provides R scripts for **NetCDF diagnostics** and **site-level spatial extraction** for Piñuecar, Colmenar Viejo and Tielmes. The tools inspect metadata, extract raw values and preserve variable/time information; they do **not** automatically download NetCDF files or produce a fully validated daily SIMPAST input table. See [AdapteCCa workflow](src/climate_data/README.md) for usage and scientific limitations.
+
 ## Repository structure
 
 ```text
@@ -75,6 +79,10 @@ toward drier environments.
 │   ├── observed_vs_simulated_biomass.png
 │   └── future_biomass_projections.png
 └── src/
+    ├── climate_data/
+    │   ├── README.md
+    │   ├── 01_diagnose_adaptecca_netcdf.R
+    │   └── 02_extract_adaptecca_sites.R
     ├── 01_climate_data_processing.R
     ├── 02_ecohydrological_model.R
     ├── 03_parameter_calibration.R
@@ -85,7 +93,11 @@ toward drier environments.
 ## Code workflow
 
 ```text
-Climate data
+AdapteCCa THREDDS (manual download)
+    ↓
+NetCDF diagnostics and site extraction
+    ↓
+Time-axis / unit validation and daily forcing preparation (not automated)
     ↓
 Climate-data processing
     ↓
